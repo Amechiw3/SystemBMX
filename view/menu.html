@@ -1,0 +1,107 @@
+<section id="ext_menu-0">
+  <nav class="navbar navbar-dropdown navbar-fixed-top">
+    <div class="container">
+      <div class="mbr-table">
+        <div class="mbr-table-cell">
+          <div class="navbar-brand">
+            <a href="index.php" class="navbar-logo"><img src="../model/bmx.png" alt="Sistema BMX"></a>
+            <a class="navbar-caption" href="index.php">Sistema Bicicletas</a>
+          </div>
+        </div>
+        <div class="mbr-table-cell">
+          <button class="navbar-toggler pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            <div class="hamburger-icon"></div>
+          </button>
+          <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-xl" id="exCollapsingNavbar">
+            <li class="nav-item dropdown open">
+              <a class="nav-link link dropdown-toggle" href="https://mobirise.com/" data-toggle="dropdown-submenu" aria-expanded="true">REPORTES
+              </a>
+              <div class="dropdown-menu">
+                <div class="dropdown">  <!-- Basicos -->
+                  <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">
+                    Basicos
+                  </a>
+                  <div class="dropdown-menu dropdown-submenu">
+                    <a class="dropdown-item" href="reportes.php?reporte=ventas">
+                      Ventas
+                    </a>
+                    <a class="dropdown-item" href="reportes.php?reporte=detalles">
+                      Detalles
+                    </a>
+                    <a class="dropdown-item" href="reportes.php?reporte=productos">
+                      Productos
+                    </a>
+                    <a class="dropdown-item" href="reportes.php?reporte=usuarios">
+                      Usuarios
+                    </a>
+                    <a class="dropdown-item" href="reportes.php?reporte=categorias">
+                      Categoria
+                    </a>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="dropdown"> <!-- Compuestos -->
+                  <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">
+                    Compuestos
+                  </a>
+                  <div class="dropdown-menu dropdown-submenu">
+                    <a class="dropdown-item" href="compuestos.php?reporte=ventas">
+                      Ventas
+                    </a>
+                    <a class="dropdown-item" href="compuestos.php?reporte=productos">
+                      Productos
+                    </a>
+                    <a class="dropdown-item" href="compuestos.php?reporte=usuarios">
+                      Usuarios
+                    </a>
+                    <a class="dropdown-item" href="compuestos.php?reporte=categorias">
+                      Categoria
+                    </a>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="dropdown"> <!-- Periodo -->
+                  <a class="dropdown-item" href="periodo.php">
+                    Periodo
+                  </a>
+                </div>
+                <!--  -->
+                <div class="dropdown"> <!-- Sumarios -->
+                  <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">
+                    Sumarios
+                  </a>
+                  <div class="dropdown-menu dropdown-submenu">
+                    <a class="dropdown-item" href="sumarios.php?reporte=ventas">
+                      Ventas
+                    </a>
+                    <a class="dropdown-item" href="sumarios.php?reporte=productos">
+                      Productos
+                    </a>
+                    <a class="dropdown-item" href="sumarios.php?reporte=usuarios">
+                      Usuarios
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link link" href="usuarios.php">USUARIOS</a></li>
+            <li class="nav-item"><a class="nav-link link" href="ventas.php">VENTAS</a></li>
+            <li class="nav-item"><a class="nav-link link" href="detalles.php">DETALLES</a></li>
+            <li class="nav-item"><a class="nav-link link" href="productos.php">PRODUCTOS</a></li>
+            <li class="nav-item"><a class="nav-link link" href="categorias.php">CATEGORIAS</a></li>
+            <!-- <li class="nav-item nav-btn"><a class="nav-link btn btn-success" href="#" onClick="window.print();">Imprimir</a></li> -->
+            <li class="nav-item nav-btn"><a class="nav-link btn btn-danger" href="../logout.php">SALIR</a></li>
+          </ul>
+          <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            <div class="close-icon"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+<?php
+  if ($db == null) {
+    die();
+  }
+?>
